@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap'); /*font-family: 'Roboto', sans-serif;*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+main {
+    background-color: #F7F7F7;
+    max-width: 900px;
+    display: grid;
+    grid-template-areas: "principal propaganda"
+                         "principal recomendados";
+    grid-template-columns: 1fr 270px;
+    padding: 38px 35px 19px 35px;
+    gap: 20px 17px;
+}
+
+.video-principal {
+    grid-area: principal;
+}
+
+.video-principal .video {
+    max-width: 100%;
+    margin-bottom: 12px;
+}
+
+.video-principal .titulo{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.video-principal .visualizacoes {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 9px;
+}
+
+.video-principal .descricao {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.propaganda {
+    grid-area: propaganda;
+}
+
+.videos-recomendados {
+    grid-area: recomendados;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.videos-recomendados .recomendado {
+    display: flex;
+}
+
+.videos-recomendados .recomendado .descricao-recomendados {
+    margin-left: 4px;
+}
+
+.videos-recomendados .recomendado .descricao-recomendados .titulo-recomendado {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.videos-recomendados .recomendado .descricao-recomendados > p {
+    font-size: 11px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}

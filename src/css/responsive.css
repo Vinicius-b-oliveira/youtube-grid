@@ -1,0 +1,22 @@
+@media(max-width:728px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 38px 35px 19px 35px;
+        gap: 20px;
+    }
+
+    .propaganda {
+        align-self: center;
+        max-width: 100%;
+    }
+
+    .videos-recomendados {
+        align-self: center;
+    }
+
+    .videos-recomendados .recomendado .video-recomendado {
+        max-width: 50%;
+        height: 70px;
+    }
+}
